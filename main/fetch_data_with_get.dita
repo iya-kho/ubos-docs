@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="fetch_data_with_get_operation">
+    <title>Fetch data with GET</title>
+    <shortdesc>In this section, you will learn how to retrieve data using the GET
+        method.</shortdesc>
+    <taskbody>
+        <prereq id="prereq_mr1_g2y_rbc">
+            <p
+                conref="add_data_to_your_database_with_post.dita#add_data_to_your_database_with_post/prereq_crud"/>
+        </prereq>
+        <context>
+            <p>To build the GET method, we will need the following nodes: </p>
+            <p>
+                <table frame="all" rowsep="1" colsep="1" id="table_upz_dcy_rbc">
+                    <tgroup cols="2">
+                        <colspec colname="c1" colnum="1" colwidth="1*"/>
+                        <colspec colname="c2" colnum="2" colwidth="2.13*"/>
+                        <thead>
+                            <row>
+                                <entry>Node</entry>
+                                <entry>Description</entry>
+                            </row>
+                        </thead>
+                        <tbody>
+                            <row conref="../useful%20info/common_node_red_nodes.dita#common_node_red_nodes/http_in">
+                                <entry/>
+                                <entry/>
+                            </row>
+                            <row conref="../useful%20info/common_node_red_nodes.dita#common_node_red_nodes/function">
+                                <entry/>
+                                <entry/>
+                            </row>
+                            <row
+                                conref="../useful%20info/common_node_red_nodes.dita#common_node_red_nodes/mongodb_in">
+                                <entry/>
+                                <entry/>
+                            </row>
+                            <row
+                                conref="../useful%20info/common_node_red_nodes.dita#common_node_red_nodes/http_response">
+                                <entry/>
+                                <entry/>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+                <note
+                    conref="add_data_to_your_database_with_post.dita#add_data_to_your_database_with_post/p_link_common_nodes"
+                    id="note_lhr_b2q_tbc"/>
+            </p>
+        </context>
+        <steps>
+            <step>
+                <cmd><text
+                        conref="add_data_to_your_database_with_post.dita#add_data_to_your_database_with_post/text_step_drag_drop"
+                /><image placement="break" href="../media/get/step1.png" width="500"
+                        id="image_y5k_xqq_tbc" alt="Screenshot">
+                        <alt>Screenshot</alt>
+                    </image></cmd>
+            </step>
+            <step>
+                <cmd><text
+                        conref="add_data_to_your_database_with_post.dita#add_data_to_your_database_with_post/text_step_connect_nodes"
+                /><image placement="break" href="../media/get/step2.png" width="500"
+                        id="image_thk_crq_tbc" alt="Screenshot">
+                        <alt>Screenshot</alt>
+                    </image></cmd>
+            </step>
+            <step>
+                <cmd><u>http in</u>
+                </cmd>
+                <info>
+                    <p>Double-click the node to open its properties. Set the method to <b>GET</b>
+                        and name the endpoint for your URL, then click <b>Done</b>.</p>
+                    <image placement="break" href="../media/get/step3.png" id="image_zln_5rq_tbc"
+                        alt="Screenshot" width="500">
+                        <alt>Screenshot</alt>
+                    </image>
+                </info>
+            </step>
+            <step>
+                <cmd><u>function</u>
+                </cmd>
+                <info>
+                    <p>Give your function a name to help you navigate your back-end. </p>
+                </info>
+                <info>
+                    <p>To specify that you want to retrieve all the available data, set
+                            <i>msg.payload</i> to an empty object. You can do this by copying the
+                        following code into the beginning of the function's body: </p>
+                    <codeblock id="codeblock_fbq_vqn_sbc" outputclass="language-javascript">msg.payload = {};</codeblock>
+                    <p>Your function should now look like this: </p>
+                    <image placement="break" href="../media/get/step4.png" width="500"
+                        id="image_x2b_hsq_tbc">
+                        <alt>Screenshot</alt>
+                    </image>
+                </info>
+            </step>
+            <step>
+                <cmd><u>mongodb in</u>
+                </cmd>
+                <info>
+                    <p>Enter the collection name and select <b>find</b> as the operation. Then,
+                        click on <b>Done</b>.</p>
+                    <image placement="break" href="../media/get/step5.png" width="500"
+                        id="image_dfg_vsq_tbc">
+                        <alt>Screenshot</alt>
+                    </image>
+                </info>
+            </step>
+            <step>
+                <cmd><u>http response</u></cmd>
+                <info>
+                    <p> Leave the node without any changes.</p>
+                </info>
+            </step>
+            <step>
+                <cmd>Deploy the service.</cmd>
+            </step>
+        </steps>
+        <result id="result_d33_fq1_qbc">
+            <p>The API can now retrieve data from your database using the GET method.</p>
+            <p
+                conref="add_data_to_your_database_with_post.dita#add_data_to_your_database_with_post/p_link_postman"/>
+        </result>
+    </taskbody>
+</task>

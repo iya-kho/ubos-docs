@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="steps_to_create_a_rest_api">
+    <title>Steps to create a REST API</title>
+    <shortdesc>Here's an outline of the steps we'll follow to create our REST API.</shortdesc>
+    <conbody>
+        <p>To create our application, we will need two Ubos services:</p>
+        <ul id="ol_uwl_nyw_tbc">
+            <li><b>Node-RED</b> for building our back-end application using visual blocks</li>
+            <li><b>MongoDB</b> for storing and manipulating data</li>
+        </ul>
+        <p>To build a simple REST API from scratch, we will first <b>set up our working
+                environment</b>, <b>create the services</b>, and <b>connect them</b>. Then, we will
+            develop the functionality of each CRUD operation:<b> create</b>, <b>read</b>,
+                <b>update</b>, and <b>delete</b>.</p>
+        <image placement="break" href="../media/introduction/steps_infographics.png" width="500"
+            id="image_ik1_nkx_tbc" align="center">
+            <alt>Infographics: steps to build REST API with Ubos</alt>
+        </image>
+        <p>Let's get started!</p>
+    </conbody>
+</concept>
