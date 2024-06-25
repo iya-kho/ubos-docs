@@ -14,7 +14,7 @@
         <topicref href="main/update_data_with_put.dita"/>
         <topicref href="main/delete_data_with_delete.dita"/>
     </topicref>
-    <topicref href="useful%20info/useful_info.dita">
-        <topicref href="useful%20info/common_node_red_nodes.dita"/>
+    <topicref href="useful_info/useful_info.dita">
+        <topicref href="useful_info/common_node_red_nodes.dita"/>
     </topicref>
 </map>
