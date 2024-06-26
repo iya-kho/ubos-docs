@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+   <appContext helpID="introduction" path="introduction/introduction.html"/>
+   <appContext helpID="what_is_ubos" path="introduction/what_is_ubos.html"/>
+   <appContext helpID="steps_to_create_a_rest_api"
+               path="introduction/steps_to_create_a_rest_api.html"/>
+   <appContext helpID="build_your_api" path="main/build_your_api.html"/>
+   <appContext helpID="set_up_your_environment"
+               path="main/set_up_your_environment.html"/>
+   <appContext helpID="connect_node_red_to_mongodb"
+               path="main/connect_node_red_to_mongodb.html"/>
+   <appContext helpID="add_data_to_your_database_with_post"
+               path="main/add_data_to_your_database_with_post.html"/>
+   <appContext helpID="fetch_data_with_get_operation"
+               path="main/fetch_data_with_get.html"/>
+   <appContext helpID="update_data_with_put" path="main/update_data_with_put.html"/>
+   <appContext helpID="delete_data_with_delete_operation"
+               path="main/delete_data_with_delete.html"/>
+   <appContext helpID="useful_info" path="useful_info/useful_info.html"/>
+   <appContext helpID="common_node_red_nodes"
+               path="useful_info/common_node_red_nodes.html"/>
+</map>

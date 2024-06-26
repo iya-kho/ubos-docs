@@ -1,0 +1,255 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" data-whc_version="26.1">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="DC.rights.owner" content="(C) Copyright 2024"/><meta name="copyright" content="(C) Copyright 2024"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="task"/><meta name="description" content="Let's learn how to update data in your database using the PUT method."/><meta name="DC.relation" content="../main/build_your_api.html"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="update_data_with_put"/>        
+      <title>Update data with PUT</title><!--  Generated with Oxygen version 26.1, build number 2024041900.  --><meta name="wh-path2root" content="../"/><meta name="wh-toc-id" content="update_data_with_put-d248e100"/><meta name="wh-source-relpath" content="main/update_data_with_put.dita"/><meta name="wh-out-relpath" content="main/update_data_with_put.html"/>
+
+    <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/commons.css?buildId=2024041900"/>
+    <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/topic.css?buildId=2024041900"/>
+
+    <script src="../oxygen-webhelp/app/options/properties.js?buildId=20240626183006"></script>
+    <script src="../oxygen-webhelp/app/localization/strings.js?buildId=2024041900"></script>
+    <script src="../oxygen-webhelp/app/search/index/keywords.js?buildId=20240626183006"></script>
+    <script defer="defer" src="../oxygen-webhelp/app/commons.js?buildId=2024041900"></script>
+    <script defer="defer" src="../oxygen-webhelp/app/topic.js?buildId=2024041900"></script>
+<link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/oxygen.css?buildId=2024041900"/><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/notes.css?buildId=2024041900"/></head>
+
+    <body id="update_data_with_put" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">
+            Jump to main content
+        </a>
+        
+        
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <a href="https://ubos.tech/" class=" wh_logo d-none d-sm-block " target="_blank"><img src="../ubos_logo.png" alt="Create a REST API with Ubos"/></a>
+                    <div class=" wh_publication_title "><a href="../index.html"><span class="title">Create a REST API with Ubos</span></a></div>
+                    
+                </div>
+                
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="introduction-d248e11-mi" data-tocid="introduction-d248e11" data-state="not-ready" class=" topicref " data-id="introduction"><span class="title"><a href="../introduction/introduction.html">Introduction</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="build_your_api-d248e45-mi" data-tocid="build_your_api-d248e45" data-state="not-ready" class=" topicref " data-id="build_your_api"><span class="title"><a href="../main/build_your_api.html">Build your API</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="useful_info-d248e123-mi" data-tocid="useful_info-d248e123" data-state="not-ready" class=" topicref " data-id="useful_info"><span class="title"><a href="../useful_info/useful_info.html">Useful info</a></span></span></li></ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        
+         
+        
+        <div class=" wh_search_input navbar-form wh_topic_page_search search " role="form">
+            
+            
+            
+            <form id="searchForm" method="get" role="search" action="../search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div></form>
+            
+            
+            
+        </div>
+        
+        <div class="container-fluid" id="wh_topic_container">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none navbar-expand-md" aria-label="Tools">
+                    
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol class="d-print-none"><li><span class="home"><a href="../index.html"><span>Home</span></a></span></li><li><div class="topicref" data-id="build_your_api"><div class="title"><a href="../main/build_your_api.html">Build your API</a><div class="wh-tooltip"><p class="shortdesc">In this chapter, we'll dive into the development process. </p></div></div></div></li><li class="active"><div class="topicref" data-id="update_data_with_put"><div class="title"><a href="../main/update_data_with_put.html">Update data with PUT</a><div class="wh-tooltip"><p class="shortdesc">Let's learn how to update data in your database using the PUT method.</p></div></div></div></li></ol></div>
+                    
+                    
+                    
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        
+                        
+                        
+                        
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                        
+                        <button type="button" id="wh_toc_button" class="custom-toggler navbar-toggler collapsed wh_toggle_button navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    
+                </nav>
+            </div>
+            
+            
+            
+            
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-12 d-md-block d-none d-print-none" aria-label="Table of Contents Container">
+                            <div id="wh_publication_toc_content">
+		                        
+                            	<div class=" wh_publication_toc " data-tooltip-position="right"><span class="expand-button-action-labels"><span id="button-expand-action" role="button" aria-label="Expand"></span><span id="button-collapse-action" role="button" aria-label="Collapse"></span><span id="button-pending-action" role="button" aria-label="Pending"></span></span><ul role="tree" aria-label="Table of Contents"><li role="treeitem" aria-expanded="true"><div data-tocid="build_your_api-d248e45" class="topicref" data-id="build_your_api" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action build_your_api-d248e45-link" class="wh-expand-btn"></span><div class="title"><a href="../main/build_your_api.html" id="build_your_api-d248e45-link">Build your API</a><div class="wh-tooltip"><p class="shortdesc">In this chapter, we'll dive into the development process. </p></div></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem"><div data-tocid="set_up_your_environment-d248e56" class="topicref" data-id="set_up_your_environment" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../main/set_up_your_environment.html" id="set_up_your_environment-d248e56-link">Set up your environment</a><div class="wh-tooltip"><p class="shortdesc">Let's start by setting up our Ubos workspace for a REST API app.</p></div></div></div></li><li role="treeitem"><div data-tocid="connect_node_red_to_mongodb-d248e67" class="topicref" data-id="connect_node_red_to_mongodb" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../main/connect_node_red_to_mongodb.html" id="connect_node_red_to_mongodb-d248e67-link">Connect Node-RED to MongoDB</a><div class="wh-tooltip"><p class="shortdesc">Let's connect our Node-RED environment to the MongoDB database. </p></div></div></div></li><li role="treeitem"><div data-tocid="add_data_to_your_database_with_post-d248e78" class="topicref" data-id="add_data_to_your_database_with_post" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../main/add_data_to_your_database_with_post.html" id="add_data_to_your_database_with_post-d248e78-link">Add data to your database with POST</a><div class="wh-tooltip"><p class="shortdesc">Let’s learn how to add data to your database using the POST method. </p></div></div></div></li><li role="treeitem"><div data-tocid="fetch_data_with_get_operation-d248e89" class="topicref" data-id="fetch_data_with_get_operation" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../main/fetch_data_with_get.html" id="fetch_data_with_get_operation-d248e89-link">Fetch data with GET</a><div class="wh-tooltip"><p class="shortdesc">In this section, you will learn how to retrieve data using the GET         method.</p></div></div></div></li><li role="treeitem" class="active"><div data-tocid="update_data_with_put-d248e100" class="topicref" data-id="update_data_with_put" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../main/update_data_with_put.html" id="update_data_with_put-d248e100-link">Update data with PUT</a><div class="wh-tooltip"><p class="shortdesc">Let's learn how to update data in your database using the PUT method.</p></div></div></div></li><li role="treeitem"><div data-tocid="delete_data_with_delete_operation-d248e111" class="topicref" data-id="delete_data_with_delete_operation" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../main/delete_data_with_delete.html" id="delete_data_with_delete_operation-d248e111-link">Delete data with DELETE</a><div class="wh-tooltip"><p class="shortdesc">In this section, you will learn how to remove items from your database using the         DELETE method.</p></div></div></div></li></ul></li></ul></div>
+		                        
+                            </div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-12" id="wh_topic_body">
+                        <button id="wh_close_publication_toc_button" class="close-toc-button d-none" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc" aria-expanded="true">
+                            <span class="close-toc-icon-container">
+                                <span class="close-toc-icon"></span>     
+                            </span>
+                        </button>
+                        
+                        
+                        <div class=" wh_topic_content body "><main role="main"><article class="- topic/topic task/task topic task" role="article" aria-labelledby="ariaid-title1">
+    <h1 class="- topic/title title topictitle1" id="ariaid-title1">Update data with PUT</h1>
+    
+    <div class="- topic/body task/taskbody body taskbody"><p class="- topic/shortdesc shortdesc">Let's learn how to update data in your database using the PUT method.</p>
+        <section class="- topic/section task/prereq section prereq" id="update_data_with_put__prereq_ksd_gq1_qbc" data-ofbid="update_data_with_put__prereq_ksd_gq1_qbc">
+            <p dir="ltr" class="- topic/p p" id="update_data_with_put__prereq_crud" data-ofbid="update_data_with_put__prereq_crud">To start working on CRUD operations, make sure your
+                Node-RED environment is connected to your MongoDB database.</p>
+        </section>
+        <section class="- topic/section task/context section context">
+            <p class="- topic/p p">To build the PUT method, we will need the following nodes:</p>
+            <div class="- topic/p p">
+                <div class="table-container"><table class="- topic/table table frame-all" id="update_data_with_put__table_jxg_4fy_rbc" data-ofbid="update_data_with_put__table_jxg_4fy_rbc" data-cols="2"><caption></caption><colgroup><col style="width:32.467532467532465%"/><col style="width:67.53246753246754%"/></colgroup><thead class="- topic/thead thead">
+                            <tr class="- topic/row">
+                                <th class="- topic/entry entry colsep-1 rowsep-1" id="update_data_with_put__table_jxg_4fy_rbc__entry__1">Node</th>
+                                <th class="- topic/entry entry colsep-0 rowsep-1" id="update_data_with_put__table_jxg_4fy_rbc__entry__2">Description</th>
+                            </tr>
+                        </thead><tbody class="- topic/tbody tbody">
+                            <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-1 rowsep-1" headers="update_data_with_put__table_jxg_4fy_rbc__entry__1">http in</td>
+                        <td class="- topic/entry entry colsep-0 rowsep-1" headers="update_data_with_put__table_jxg_4fy_rbc__entry__2">Listens to HTTP requests.</td>
+                    </tr>
+                            <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-1 rowsep-1" headers="update_data_with_put__table_jxg_4fy_rbc__entry__1">function</td>
+                        <td class="- topic/entry entry colsep-0 rowsep-1" headers="update_data_with_put__table_jxg_4fy_rbc__entry__2">Allows to write custom JavaScript code to manipulate data passed
+                            through it. </td>
+                    </tr>
+                            <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-1 rowsep-1" headers="update_data_with_put__table_jxg_4fy_rbc__entry__1">mongodb out</td>
+                        <td class="- topic/entry entry colsep-0 rowsep-1" headers="update_data_with_put__table_jxg_4fy_rbc__entry__2">Allows data to be stored, updated, or removed from a MongoDB
+                            collection. </td>
+                    </tr>
+                            <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-1 rowsep-0" headers="update_data_with_put__table_jxg_4fy_rbc__entry__1">http response</td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="update_data_with_put__table_jxg_4fy_rbc__entry__2">Replies to HTTP requests.</td>
+                    </tr>
+                        </tbody></table></div>
+                <div class="- topic/note note note note_note" id="update_data_with_put__note_lhr_b2q_tbc" data-ofbid="update_data_with_put__note_lhr_b2q_tbc"><span class="note__title">Note:</span> To learn more about Node-RED nodes, refer to the chapter
+                    <a class="- topic/xref xref" href="../useful%20info/common_node_red_nodes.html">../useful%20info/common_node_red_nodes.html</a>.</div>
+            </div>
+        </section>
+        <section class="- topic/ol task/steps ol steps"><ol class="- topic/ol task/steps ol steps"><li class="- topic/li task/step li step">
+                <span class="- topic/ph task/cmd ph cmd">Drag and drop the nodes onto the dashboard in
+                        the specified order:<br/><img class="- topic/image image" id="update_data_with_put__image_svw_shy_rbc" src="../media/put/step1.png" width="500" alt="Screenshot"/><br/></span>
+            </li><li class="- topic/li task/step li step">
+                <span class="- topic/ph task/cmd ph cmd">To connect a node to the next one, click on
+                        the gray square on its right border and drag your mouse to the gray square
+                        on the left border of the next node. You will see a line linking the two
+                        nodes. Now, we are ready to configure each of the nodes. <br/><img class="- topic/image image" id="update_data_with_put__image_opg_13y_rbc" src="../media/put/step2.png" width="500" alt="Screenshot"/><br/></span>
+            </li><li class="- topic/li task/step li step">
+                <span class="- topic/ph task/cmd ph cmd"><u class="+ topic/ph hi-d/u ph u">http in</u></span>
+                <div class="- topic/itemgroup task/info itemgroup info">
+                    <p class="- topic/p p">Double-click on the node to open its properties. Set the method to
+                        <strong class="+ topic/ph hi-d/b ph b">PUT</strong>, name the endpoint for your URL, and then click <strong class="+ topic/ph hi-d/b ph b">Done</strong>.</p>
+                    <br/><img class="- topic/image image" id="update_data_with_put__image_ihk_g5q_tbc" src="../media/put/step3.png" width="500" alt="Screenshot"/><br/>
+                </div>
+            </li><li class="- topic/li task/step li step">
+                <span class="- topic/ph task/cmd ph cmd"><u class="+ topic/ph hi-d/u ph u">function</u></span>
+                <div class="- topic/itemgroup task/info itemgroup info" id="update_data_with_put__common_part_update_delete_function">
+                    <p class="- topic/p p">To update an object, let's identify it by the object ID that MongoDB
+                        generates automatically for its records. To do this, open the <strong class="+ topic/ph hi-d/b ph b">Setup</strong>
+                        tab in the function's properties, add a module, and set it to
+                            <em class="+ topic/ph hi-d/i ph i">objectid</em>. </p>
+                    <br/><img class="- topic/image image" id="update_data_with_put__image_w4w_z5q_tbc" src="../media/put/step4.1.png" width="500" alt="Screenshot"/><br/>
+                    <p class="- topic/p p">Return to the <strong class="+ topic/ph hi-d/b ph b">On Message</strong> tab and enter a descriptive name for your
+                        function. </p>
+                </div>
+                <div class="- topic/itemgroup task/info itemgroup info">
+                    <p class="- topic/p p">Now, let's update the function's body to meet our needs.</p>
+                    <p class="- topic/p p">First, we will specify the <em class="+ topic/ph hi-d/i ph i">id</em> of the entry to be updated in the
+                            <em class="+ topic/ph hi-d/i ph i">msg.query</em> object using the <em class="+ topic/ph hi-d/i ph i">_id</em> property received in the
+                        body of the HTTP request. Then, we will delete the <em class="+ topic/ph hi-d/i ph i">_id</em> from the
+                            <em class="+ topic/ph hi-d/i ph i">msg.payload</em> object since MongoDB doesn't allow id modification.
+                        Finally, we'll use the MongoDB <em class="+ topic/ph hi-d/i ph i">$set</em> operator to specify the fields to
+                        update and their new values.</p>
+                    <div class="- topic/note note note note_note" id="update_data_with_put__note_mongodb_docs_link" data-ofbid="update_data_with_put__note_mongodb_docs_link"><span class="note__title">Note:</span> To learn more about MongoDB operators, refer
+                        to the <a class="- topic/xref xref" href="https://www.mongodb.com/docs/v3.6/reference/operator/" target="_blank" rel="external noopener">MongoDB documentation</a>.</div>
+                    <p class="- topic/p p">Copy the following code at the beginning of the function's body: </p>
+                    <pre class="+ topic/pre pr-d/codeblock pre codeblock language-javascript" id="update_data_with_put__codeblock_in5_yvp_tbc" data-ofbid="update_data_with_put__codeblock_in5_yvp_tbc">msg.query = {
+  _id: objectid(msg.payload._id),
+};
+
+<strong class="hl-keyword">delete</strong> msg.payload._id;
+
+msg.payload = {
+  $set: msg.payload,
+};</pre>
+                    <p class="- topic/p p">Your function should now appear like this:</p>
+                    <br/><img class="- topic/image image" id="update_data_with_put__image_ydk_5vq_tbc" src="../media/put/step4.2.png" width="500" alt="Screenshot"/><br/>
+                </div>
+            </li><li class="- topic/li task/step li step">
+                <span class="- topic/ph task/cmd ph cmd"><u class="+ topic/ph hi-d/u ph u">mongodb out</u></span>
+                <div class="- topic/itemgroup task/info itemgroup info">
+                    <p class="- topic/p p">Specify the collection name in MongoDB, set the operation to <strong class="+ topic/ph hi-d/b ph b">update</strong>,
+                        and then click <strong class="+ topic/ph hi-d/b ph b">Done</strong>.</p>
+                    <br/><img class="- topic/image image" id="update_data_with_put__image_xj3_1wq_tbc" src="../media/put/step5.png" width="500" alt="Screenshot"/><br/>
+                </div>
+            </li><li class="- topic/li task/step li step">
+                <span class="- topic/ph task/cmd ph cmd"><u class="+ topic/ph hi-d/u ph u">http response</u></span>
+                <div class="- topic/itemgroup task/info itemgroup info">
+                    <p class="- topic/p p"> Leave the node without any changes.</p>
+                </div>
+            </li><li class="- topic/li task/step li step">
+                <span class="- topic/ph task/cmd ph cmd">Deploy the service.</span>
+            </li></ol></section>
+        <section class="- topic/section task/result section result" id="update_data_with_put__result_lbj_gq1_qbc" data-ofbid="update_data_with_put__result_lbj_gq1_qbc">
+            <p class="- topic/p p">The API is now ready to update existing entries in the database using the PUT
+                method.</p>
+            <p class="- topic/p p">To test your REST API, you can use a platform like <a class="- topic/xref xref" href="https://www.postman.com/" target="_blank" rel="external noopener">Postman</a>.</p>
+        </section>
+    </div>
+</article></main></div>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+            
+        </div> 
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container mx-auto ">
+    Generated by <a class="oxyFooter" href="http://www.oxygenxml.com/xml_webhelp.html" target="_blank" rel="noopener">&lt;oXygen/&gt; XML WebHelp</a> - Evaluation Version
+  </div>
+</footer>
+        
+        <div id="go2top" class="d-print-none">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <div id="modal_img_container"></div>
+            <div id="caption"></div>
+        </div>
+        
+        
+        
+    </body>
+</html>
